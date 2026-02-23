@@ -1,15 +1,19 @@
 import './App.css'
+import TrendingProducts from './components/trendingProducts'
 
 function App() {  
 
   return (
     <>
       <div>
-        Malith Dilshan
+
+        <TrendingProducts/>
+
+
       </div>
     </>
   )
-  
+
 }
 
 export default App
