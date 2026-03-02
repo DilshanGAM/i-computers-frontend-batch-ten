@@ -1,17 +1,21 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import TrendingProducts from './components/trendingProducts'
+import AdminPage from './pages/adminPage'
+import HomePage from './pages/homePage'
 
 function App() {  
 
-  return (
-    <>
-      <div>
+  return (   
+      <div className='w-full h-screen border-[6px] flex justify-center items-center '>
+        <Routes>
 
-        <TrendingProducts/>
+          <Route path='/' element={<HomePage />} />
+
+          <Route path='/admin' element={<AdminPage />} />
 
 
+        </Routes>
       </div>
-    </>
   )
 
 }
