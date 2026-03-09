@@ -1,40 +1,8 @@
-import { useState } from "react"
-
-
-export default function TestPage(){
-
-    const [emotion , setEmotion] = useState("😀")
-
-    
-
-    return(
-        <div className="w-full h-screen flex flex-col justify-center items-center bg-primary text-secondary">
-            
-            <div className="w-[300px] h-[300px] border-[6px] flex justify-center items-center text-5xl">
-                {emotion}
-            </div>
-
-            <div className="w-[300px] flex flex-row justify-center">
-                <button onClick={
-                    ()=>{
-                        setEmotion("😢")
-                    }
-                } className="bg-accent w-[70px] h-[30px] text-white border border-primary">Sad</button>
-                
-                <button onClick={
-                    ()=>{
-                        setEmotion("😀")
-                    }
-                } className="bg-accent w-[70px] h-[30px] text-white border border-primary">Happy</button>
-                
-                <button onClick={
-                    ()=>{
-                        setEmotion("😡")
-                    }
-                } className="bg-accent w-[70px] h-[30px] text-white border border-primary">Angry</button>
-            </div>
-
-        </div>
-    )
-
+import { FaRegUserCircle, FaUserShield } from "react-icons/fa";
+export default function TestPage() {
+	return (
+		<div className="w-full text-7xl text-blue-600 h-screen flex flex-col justify-center items-center bg-primary ">
+			
+		</div>
+	);
 }
